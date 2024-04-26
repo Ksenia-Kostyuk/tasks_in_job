@@ -15,10 +15,7 @@ def task_1_1(values):
 
 
 def task_2(value_list):
-    average = [1, 2, 3, 4, 5, 5, 7, 8, 9]
-    #result = lambda
-    #for i in value_list:
-        #pass
+    pass
 
 
 def task_3(value_list):
@@ -39,11 +36,3 @@ def task_4(value):
             print("%4d" % (i * j), end="")
         print()
 
-
-def task_5(n):
-    if n < 0:
-        return 0
-    else:
-        return (n * (n + 1) / 2)
-
-print (task_5(5))
