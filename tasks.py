@@ -1,3 +1,6 @@
+import collections
+
+
 def task_1(values):
     match values:
         case 1: print(f'{values} компьютер')
@@ -15,7 +18,19 @@ def task_1_1(values):
 
 
 def task_2(value_list):
-    pass
+    result = []
+    end = []
+    for i in range(51):
+        match i:
+            case 0: continue
+        for a in value_list:
+            match a % i:
+                case 0: result.append(i)
+                case 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9: continue
+    for v in result:
+        if result.count(v) == len(value_list):
+            end.append(v)
+    return [set(end)]
 
 
 def task_3(value_list):
@@ -35,4 +50,3 @@ def task_4(value):
         for j in range(1, (value + 1)):
             print("%4d" % (i * j), end="")
         print()
-
